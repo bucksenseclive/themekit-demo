@@ -1,1 +1,161 @@
-{"name":"t:sections.footer.name","type":"footer","sections":{"d7e5b060-3663-47a8-aef5-b01b005b567f":{"type":"rich-text","blocks":{"sections--17089283719424__d7e5b060-3663-47a8-aef5-b01b005b567f-heading-1":{"type":"heading","settings":{"heading":"Shop and pay safely","heading_size":"h2"}},"sections--17089283719424__d7e5b060-3663-47a8-aef5-b01b005b567f-image-1":{"type":"image","settings":{"image":"shopify:\/\/shop_images\/payment-methods.png"}},"sections--17089283719424__d7e5b060-3663-47a8-aef5-b01b005b567f-text-1":{"type":"text","settings":{"text":"<p>Payment can be made safely and securely with PayPal or credit card<\/p>"}}},"block_order":["sections--17089283719424__d7e5b060-3663-47a8-aef5-b01b005b567f-heading-1","sections--17089283719424__d7e5b060-3663-47a8-aef5-b01b005b567f-image-1","sections--17089283719424__d7e5b060-3663-47a8-aef5-b01b005b567f-text-1"],"custom_css":["h2 {font-family: \"neusa-next-std\";}",".rich-text__text {line-height: 1.5;}"],"settings":{"desktop_content_position":"center","content_alignment":"center","color_scheme":"scheme-2","full_width":true,"padding_top":36,"padding_bottom":36}},"footer-multicolumn":{"type":"multicolumn","blocks":{"75bc1973-be3c-455a-8b99-23c48911d6ef":{"type":"column","settings":{"image":"shopify:\/\/shop_images\/recycle_2x_b4923ce8-f4f6-43e1-95b3-cf1edbedac30.png","title":"","text":"<p>Our boxes are made of 100% recyclable cardboard. Our special air-inflated packaging is both re-usable and recyclable, as well as efficient to both.<\/p>","link_label":"","link":""}},"a3220672-023f-4e3e-b8ab-852d6d7ad8a4":{"type":"column","settings":{"image":"shopify:\/\/shop_images\/shipping_2x_90250e84-faa6-42e3-a967-120623ace78d.png","title":"","text":"<p>We deliver to the UK, in partnership with DPD. You can pick up express delivery or choose the delivery date at checkout.<\/p>","link_label":"","link":""}},"b9d913fa-6348-47fe-a14a-b1d63bb48ccd":{"type":"column","settings":{"image":"shopify:\/\/shop_images\/handle_2x_9c72f355-7a70-47f5-bdb5-97595fdf962b.png","title":"","text":"<p>Our experienced warehouse team take great care with every order. As specialists in glass packaging they ensure that your items stay safe.<\/p>","link_label":"","link":""}}},"block_order":["75bc1973-be3c-455a-8b99-23c48911d6ef","a3220672-023f-4e3e-b8ab-852d6d7ad8a4","b9d913fa-6348-47fe-a14a-b1d63bb48ccd"],"custom_css":["h2 {font-family: \"neusa-next-std\";}",".title-wrapper-with-link {justify-content: center;}",".multicolumn-card__image-wrapper {width: 50px; height: 50px; margin: 0 auto;}",".multicolumn-card__info {text-align: center; line-height: 1.5;}"],"settings":{"title":"Carefully packed & shipped","heading_size":"h2","image_width":"full","image_ratio":"adapt","columns_desktop":3,"column_alignment":"left","background_style":"none","button_label":"","button_link":"","color_scheme":"scheme-3518ede4-d431-4e13-8b28-246c8e4acb31","columns_mobile":"1","swipe_on_mobile":false,"padding_top":36,"padding_bottom":36}},"footer":{"type":"footer","blocks":{"footer-0":{"type":"link_list","settings":{"heading":"Useful links","menu":"footer"}},"1a788c62-7ef8-4e52-9406-c0304b027cdb":{"type":"link_list","settings":{"heading":"Legal stuff","menu":"footer-menu-legal"}},"4d3f2946-8bcc-452c-bc71-cb5c1459d816":{"type":"brand_information","settings":{"show_social":true}}},"block_order":["footer-0","1a788c62-7ef8-4e52-9406-c0304b027cdb","4d3f2946-8bcc-452c-bc71-cb5c1459d816"],"custom_css":["@media screen and (max-width: 749px) {.footer-block:nth-of-type(3) {display: none; }}"],"settings":{"color_scheme":"scheme-2","newsletter_enable":false,"newsletter_heading":"Subscribe to our emails","enable_follow_on_shop":false,"show_social":false,"enable_country_selector":false,"enable_language_selector":false,"payment_enable":false,"show_policy":true,"margin_top":0,"padding_top":36,"padding_bottom":36}}},"order":["d7e5b060-3663-47a8-aef5-b01b005b567f","footer-multicolumn","footer"]}
+{
+  "name": "t:sections.footer.name",
+  "type": "footer",
+  "sections": {
+    "d7e5b060-3663-47a8-aef5-b01b005b567f": {
+      "type": "rich-text",
+      "blocks": {
+        "sections--17089283719424__d7e5b060-3663-47a8-aef5-b01b005b567f-heading-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "Shop and pay safely",
+            "heading_size": "h2"
+          }
+        },
+        "sections--17089283719424__d7e5b060-3663-47a8-aef5-b01b005b567f-image-1": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/payment-methods.png"
+          }
+        },
+        "sections--17089283719424__d7e5b060-3663-47a8-aef5-b01b005b567f-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Payment can be made safely and securely with PayPal or credit card<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "sections--17089283719424__d7e5b060-3663-47a8-aef5-b01b005b567f-heading-1",
+        "sections--17089283719424__d7e5b060-3663-47a8-aef5-b01b005b567f-image-1",
+        "sections--17089283719424__d7e5b060-3663-47a8-aef5-b01b005b567f-text-1"
+      ],
+      "custom_css": [
+        "h2 {font-family: \"neusa-next-std\";}",
+        ".rich-text__text {line-height: 1.5;}"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-2",
+        "full_width": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "footer-multicolumn": {
+      "type": "multicolumn",
+      "blocks": {
+        "75bc1973-be3c-455a-8b99-23c48911d6ef": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/recycle_2x_b4923ce8-f4f6-43e1-95b3-cf1edbedac30.png",
+            "title": "",
+            "text": "<p>Our boxes are made of 100% recyclable cardboard. Our special air-inflated packaging is both re-usable and recyclable, as well as efficient to both.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "a3220672-023f-4e3e-b8ab-852d6d7ad8a4": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/shipping_2x_90250e84-faa6-42e3-a967-120623ace78d.png",
+            "title": "",
+            "text": "<p>We deliver to the UK, in partnership with DPD. You can pick up express delivery or choose the delivery date at checkout.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "b9d913fa-6348-47fe-a14a-b1d63bb48ccd": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/handle_2x_9c72f355-7a70-47f5-bdb5-97595fdf962b.png",
+            "title": "",
+            "text": "<p>Our experienced warehouse team take great care with every order. As specialists in glass packaging they ensure that your items stay safe.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "75bc1973-be3c-455a-8b99-23c48911d6ef",
+        "a3220672-023f-4e3e-b8ab-852d6d7ad8a4",
+        "b9d913fa-6348-47fe-a14a-b1d63bb48ccd"
+      ],
+      "custom_css": [
+        "h2 {font-family: \"neusa-next-std\";}",
+        ".title-wrapper-with-link {justify-content: center;}",
+        ".multicolumn-card__image-wrapper {width: 50px; height: 50px; margin: 0 auto;}",
+        ".multicolumn-card__info {text-align: center; line-height: 1.5;}"
+      ],
+      "settings": {
+        "title": "Carefully packed & shipped",
+        "heading_size": "h2",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "none",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "scheme-3518ede4-d431-4e13-8b28-246c8e4acb31",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "footer": {
+      "type": "footer",
+      "blocks": {
+        "footer-0": {
+          "type": "link_list",
+          "settings": {
+            "heading": "Useful links",
+            "menu": "footer"
+          }
+        },
+        "1a788c62-7ef8-4e52-9406-c0304b027cdb": {
+          "type": "link_list",
+          "settings": {
+            "heading": "Legal stuff",
+            "menu": "footer-menu-legal"
+          }
+        },
+        "4d3f2946-8bcc-452c-bc71-cb5c1459d816": {
+          "type": "brand_information",
+          "settings": {
+            "show_social": true
+          }
+        }
+      },
+      "block_order": [
+        "footer-0",
+        "1a788c62-7ef8-4e52-9406-c0304b027cdb",
+        "4d3f2946-8bcc-452c-bc71-cb5c1459d816"
+      ],
+      "custom_css": [
+        "@media screen and (max-width: 749px) {.footer-block:nth-of-type(3) {display: none; }}"
+      ],
+      "settings": {
+        "color_scheme": "scheme-2",
+        "newsletter_enable": false,
+        "newsletter_heading": "Subscribe to our emails",
+        "enable_follow_on_shop": false,
+        "show_social": false,
+        "enable_country_selector": false,
+        "enable_language_selector": false,
+        "payment_enable": false,
+        "show_policy": true,
+        "margin_top": 0,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "d7e5b060-3663-47a8-aef5-b01b005b567f",
+    "footer-multicolumn",
+    "footer"
+  ]
+}
