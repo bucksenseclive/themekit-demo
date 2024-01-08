@@ -17,23 +17,6 @@
   width: 100%;
 }
 
-.rich-text__heading--display {
-  font-family: "mascot-mvb";
-  position: relative;
-}
-
-.rich-text__heading--display:after {
-  content: "";
-  display: block;
-  width: 44px;
-  height: 14px;
-  background-image: url("https://cdn.shopify.com/s/files/1/0678/0836/2752/files/title-underline.png?v=1702482237");
-  background-size: cover;
-  position: absolute;
-  left: calc(50% - 22px);
-  bottom: -10px;
-}
-
 @media screen and (min-width: 750px) {
   .rich-text__wrapper {
     width: 100%;

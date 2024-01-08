@@ -21,8 +21,8 @@
         {%- for block in section.blocks -%}
           {%- case block.type -%}
             {%- when 'heading' -%}
-              <{{- block.settings.heading_level }}
-                class="rich-text__heading rte inline-richtext rich-text__heading--{{ block.settings.heading_style }} {{ block.settings.heading_size }}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+              <h2
+                class="rich-text__heading rte inline-richtext {{ block.settings.heading_size }}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
                 {{ block.shopify_attributes }}
                 {% if settings.animations_reveal_on_scroll %}
                   data-cascade
@@ -30,7 +30,7 @@
                 {% endif %}
               >
                 {{ block.settings.heading }}
-              </{{- block.settings.heading_level -}}>
+              </h2>
             {%- when 'caption' -%}
               <p
                 class="rich-text__caption {{ block.settings.text_style }} {{ block.settings.text_style }}--{{ block.settings.text_size }}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
@@ -48,22 +48,18 @@
                 {{ block.shopify_attributes }}
                 {% if settings.animations_reveal_on_scroll %}
                   data-cascade
-                  style="--animation-order: {{ forloop.index }}; font-family: 'neusa-next-std'; font-size: 13px; color: #828282;";
+                  style="--animation-order: {{ forloop.index }};"
                 {% endif %}
               >
                 {{ block.settings.text }}
               </div>
-            {%- when 'image' -%}
-                <div>
-                  {{ block.settings.image | image_url: width: 200 | image_tag }}
-                </div>
             {%- when 'button' -%}
               <div
                 class="rich-text__buttons{% if block.settings.button_label != blank and block.settings.button_label_2 != blank %} rich-text__buttons--multiple{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
                 {{ block.shopify_attributes }}
                 {% if settings.animations_reveal_on_scroll %}
                   data-cascade
-                  style="--animation-order: {{ forloop.index }}; margin-top: 0;"
+                  style="--animation-order: {{ forloop.index }};"
                 {% endif %}
               >
                 {%- if block.settings.button_label != blank -%}
@@ -73,8 +69,7 @@
                     {% else %}
                       href="{{ block.settings.button_link }}"
                     {% endif %}
-                    class="__button{% if block.settings.button_style_secondary %} __button--secondary{% else %} __button--primary{% endif %}"
-style="color: #62ADC7; font-size: 13px; font-family: 'neusa-next-std';"
+                    class="button{% if block.settings.button_style_secondary %} button--secondary{% else %} button--primary{% endif %}"
                   >
                     {{- block.settings.button_label | escape -}}
                   </a>
@@ -105,7 +100,7 @@ style="color: #62ADC7; font-size: 13px; font-family: 'neusa-next-std';"
   "tag": "section",
   "class": "section",
   "disabled_on": {
-    "groups": ["header"]
+    "groups": ["header", "footer"]
   },
   "settings": [
     {
@@ -153,7 +148,7 @@ style="color: #62ADC7; font-size: 13px; font-family: 'neusa-next-std';"
       "type": "color_scheme",
       "id": "color_scheme",
       "label": "t:sections.all.colors.label",
-      "default": "scheme-1"
+      "default": "background-1"
     },
     {
       "type": "checkbox",
@@ -221,38 +216,6 @@ style="color: #62ADC7; font-size: 13px; font-family: 'neusa-next-std';"
           ],
           "default": "h1",
           "label": "t:sections.all.heading_size.label"
-        },
-        {
-          "type": "select",
-          "id": "heading_level",
-          "options": [
-            {
-              "value": "h1",
-              "label": "H1"
-            },
-            {
-              "value": "h2",
-              "label": "H2"
-            }
-          ],
-          "default": "h2",
-          "label": "Heading level"
-        },
-        {
-          "type": "select",
-          "id": "heading_style",
-          "options": [
-            {
-              "value": "normal",
-              "label": "Normal"
-            },
-            {
-              "value": "display",
-              "label": "Display"
-            }
-          ],
-          "default": "normal",
-          "label": "Heading style"
         }
       ]
     },
@@ -315,18 +278,6 @@ style="color: #62ADC7; font-size: 13px; font-family: 'neusa-next-std';"
           "id": "text",
           "default": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.</p>",
           "label": "t:sections.rich-text.blocks.text.settings.text.label"
-        }
-      ]
-    },
-    {
-      "type": "image",
-      "name": "Image",
-      "limit": 3,
-      "settings": [
-        {
-          "type": "image_picker",
-          "id": "image",
-          "label": "Image"
         }
       ]
     },

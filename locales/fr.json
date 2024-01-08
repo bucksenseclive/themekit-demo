@@ -174,8 +174,7 @@
         "minimum": "{{ quantity }} ou plus",
         "price_at_each": "à {{ price }}\/pièce",
         "price_range": "{{ minimum }} - {{ maximum }}"
-      },
-      "free_gift_eligible": "Cadeau gratuit éligible"
+      }
     },
     "modal": {
       "label": "Galerie de supports multimédias"
