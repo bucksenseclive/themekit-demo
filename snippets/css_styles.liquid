@@ -1,0 +1,104 @@
+{{ 'brand-details.css' | asset_url | stylesheet_tag }}
+
+<style>
+
+ /* --------------------------------product-list.liquid-------------------------------- */
+
+  .slick-slide {
+    margin: 0 10px;
+  }
+  
+  .slick-list {
+    margin: 0 -10px;
+  }
+
+  .product-list {
+    width: 100%;
+    position: relative;
+  }
+
+  .product-list__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 26px 0 36px 0;
+  }
+
+  .product-list__button button {
+    cursor: pointer;
+    padding: 12px 44px;
+    background-color: #ED3534;
+    border: none;
+    border-radius:  32px;
+    font-size: 14px;
+    color: #fff;
+    font-weight: 500;
+    font-family: 'neusa-next-std', sans-serif;
+  }
+
+ /* --------------------------------product-card.liquid-------------------------------- */
+  
+  .product-card__container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+
+  .product-card__title a {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+  }
+  
+  
+  .product-card__money {
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  .product-card__compare-at-price {
+    color: #666666;
+    position:relative;
+    display: inline-block;
+  }
+  
+  .product-card__compare-at-price::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 80%;
+    height: 1px;
+    background-color: #666;
+    transform: translate(5px, 0) rotate(-30deg);
+  }
+
+  .product-card__stars {
+    height: 12px;
+    width: auto;
+    margin: 8px 0;
+    
+  }
+  
+  .product-card__title {
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 500;
+    font-family: 'neusa-next-std', sans-serif;
+    line-height: 1.2
+  }
+
+  .product-card__sm-description {
+    font-size: 12px;
+    line-height: 1.2;
+    text-transform: uppercase;
+    font-family: 'neusa-next-std', sans-serif;
+  }
+
+  .product-card__img {
+      width: 240px;
+      height: auto;
+  }
+
+</style>

@@ -12,8 +12,17 @@
 
 .card:not(.ratio) {
   display: flex;
-  flex-direction: column;
+  /*flex-direction: column;*/
   height: 100%;
+  flex-direction: row;
+  gap: 1.5rem;
+}
+
+@media screen and (min-width: 990px) {
+  .card:not(.ratio) {
+    flex-direction: column;
+    gap: unset;
+  }
 }
 
 .card.card--horizontal {
@@ -188,6 +197,11 @@
 .card__heading {
   margin-top: 0;
   margin-bottom: 0;
+
+  text-transform: uppercase;
+  font-family: "neusa-next-std";
+  font-weight: 500;
+  letter-spacing: 0;
 }
 
 .card__heading:last-child {

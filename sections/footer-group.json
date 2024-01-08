@@ -9,7 +9,9 @@
           "type": "heading",
           "settings": {
             "heading": "Shop and pay safely",
-            "heading_size": "h2"
+            "heading_size": "h2",
+            "heading_level": "h2",
+            "heading_style": "normal"
           }
         },
         "sections--17089283719424__d7e5b060-3663-47a8-aef5-b01b005b567f-image-1": {
@@ -31,8 +33,8 @@
         "sections--17089283719424__d7e5b060-3663-47a8-aef5-b01b005b567f-text-1"
       ],
       "custom_css": [
-        "h2 {font-family: \"neusa-next-std\";}",
-        ".rich-text__text {line-height: 1.5;}"
+        "h2 {font-family: \"neusa-next-std\"; font-size: 18px; letter-spacing: 0;}",
+        ".rich-text__text {line-height: 1.5; font-family: \"neusa-next-std\"; color: #707070; font-size: 13px;}"
       ],
       "settings": {
         "desktop_content_position": "center",
@@ -83,10 +85,10 @@
         "b9d913fa-6348-47fe-a14a-b1d63bb48ccd"
       ],
       "custom_css": [
-        "h2 {font-family: \"neusa-next-std\";}",
+        "h2 {font-family: \"neusa-next-std\"; font-size: 1.6rem; letter-spacing: 0; color: #f3f3f3;}",
         ".title-wrapper-with-link {justify-content: center;}",
-        ".multicolumn-card__image-wrapper {width: 50px; height: 50px; margin: 0 auto;}",
-        ".multicolumn-card__info {text-align: center; line-height: 1.5;}"
+        ".multicolumn-card__image-wrapper {width: 44px; height: 44px; margin: 0 auto;}",
+        ".multicolumn-card__info {text-align: center; line-height: 20px; font-size: 1.3rem; font-family: \"neusa-next-std\";}"
       ],
       "settings": {
         "title": "Carefully packed & shipped",

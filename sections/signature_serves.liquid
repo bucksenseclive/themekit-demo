@@ -1,0 +1,162 @@
+<style>
+  .signature-serves {
+    width: 100%;
+    margin-bottom: 48px;
+  }
+
+  .signature-serves__title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'neusa-next-std', sans-serif;
+    margin-bottom: 12px;
+  }
+  
+  .signature-serves__recipe-card {
+    background-color: #f2f2f2;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 24px;
+    border-radius: 20px;
+  }
+
+  .signature-serves__recipe-card__title {
+    font-weight: 600;
+    font-size: 16px;
+    text-transform: uppercase;
+    margin: 6px 0 4px 0;
+    font-family: 'neusa-next-std', sans-serif;
+  }
+
+  .signature-serves__recipe-card__info {
+    font-family: 'neusa-next-std', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  .signature-serves__recipe-card__info {
+    font-size: 12px;
+  }
+
+  .signature-serves__recipe-card__info svg {
+    width: 12px;
+    height: 12px;
+  }
+  
+  .signature-serves__img {
+      width: 100%;
+      max-height: 220px;
+      height: auto;
+      border-radius: 8px;
+     cursor: pointer; 
+  }
+</style>
+
+<div class="signature-serves">
+
+  <div class="signature-serves__title">  
+      {% if section.settings.title != blank %}
+        {{ section.settings.title }}
+      {% elsif section.settings.svg_title != blank %}
+        {{ section.settings.svg_title }}
+      {% elsif section.settings.img_title != blank %}
+        <img src="{{ section.settings.img_title | img_url:"master" }}" width="100" height="100"/>
+      {% endif %}
+  </div>
+  
+  <div class="signature-serves__slider">
+    <div class="signature-serves__recipe-card">
+        <img class="signature-serves__img" src="{{ 'grapefruit-spritrz-mockup.png' | asset_img_url: 'master' }}" height='100' width='100' alt="recipe-img" />
+    
+          <h5 class="signature-serves__recipe-card__title">Grapefruit Spritz</h5>
+    
+        <div class="signature-serves__recipe-card__info">
+          <span>
+            <svg fill="#000000" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 31.249 31.249" xml:space="preserve"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g> <path d="M30.113,1.137c-2.968-2.97-11.231,0.483-14.2,3.45c-2.242,2.242-2.788,5.533-1.645,8.286 c-0.341,0.263-0.688,0.53-1.043,0.805c-0.667,0.5-1.313,1.056-1.993,1.598c-0.673,0.549-1.356,1.108-2.039,1.666 c-2.703,2.266-5.315,4.619-7.245,6.419c-0.983,0.878-1.514,1.898-1.748,2.751c-0.243,0.846-0.197,1.513-0.197,1.513 c0.13,1.911,1.656,3.484,3.622,3.621c0,0,0.667,0.046,1.512-0.197c0.851-0.231,1.874-0.763,2.752-1.747 c1.796-1.929,4.151-4.543,6.417-7.242c0.559-0.686,1.117-1.367,1.667-2.041c0.543-0.681,1.1-1.325,1.596-1.992 c0.274-0.354,0.542-0.701,0.803-1.043c2.757,1.143,6.048,0.597,8.288-1.646C29.63,12.369,33.081,4.106,30.113,1.137z"></path> </g> </g></svg> 5 Ingredients | 
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M12 14V11M12 6C7.85786 6 4.5 9.35786 4.5 13.5C4.5 17.6421 7.85786 21 12 21C16.1421 21 19.5 17.6421 19.5 13.5C19.5 11.5561 18.7605 9.78494 17.5474 8.4525M12 6C14.1982 6 16.1756 6.94572 17.5474 8.4525M12 6V3M19.5 6.5L17.5474 8.4525M12 3H9M12 3H15" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg> 3m | 
+            <svg fill="#000000" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><title>ionicons-v5-q</title><path d="M425.7,118.25A240,240,0,0,0,76.32,447l.18.2c.33.35.64.71,1,1.05.74.84,1.58,1.79,2.57,2.78a41.17,41.17,0,0,0,60.36-.42,157.13,157.13,0,0,1,231.26,0,41.18,41.18,0,0,0,60.65.06l3.21-3.5.18-.2a239.93,239.93,0,0,0-10-328.76ZM240,128a16,16,0,0,1,32,0v32a16,16,0,0,1-32,0ZM128,304H96a16,16,0,0,1,0-32h32a16,16,0,0,1,0,32Zm48.8-95.2a16,16,0,0,1-22.62,0l-22.63-22.62a16,16,0,0,1,22.63-22.63l22.62,22.63A16,16,0,0,1,176.8,208.8Zm149.3,23.1-47.5,75.5a31,31,0,0,1-7,7,30.11,30.11,0,0,1-35-49l75.5-47.5a10.23,10.23,0,0,1,11.7,0A10.06,10.06,0,0,1,326.1,231.9Zm31.72-23.1a16,16,0,0,1-22.62-22.62l22.62-22.63a16,16,0,0,1,22.63,22.63ZM423.7,436.4h0ZM416,304H384a16,16,0,0,1,0-32h32a16,16,0,0,1,0,32Z"></path></g></svg> Easy 
+          </span>
+        </div>
+     </div>
+  
+    <div class="signature-serves__recipe-card">
+      <img class="signature-serves__img" src="{{ 'opihr-ginger-ale-mockup.png' | asset_img_url:"master" }}" height='100' width='100' alt="recipe-img" />
+  
+      <h5 class="signature-serves__recipe-card__title">Opihr & Ginger Ale</h5>
+      
+      <div class="signature-serves__recipe-card__info">
+        <span>
+          <svg fill="#000000" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 31.249 31.249" xml:space="preserve"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g> <path d="M30.113,1.137c-2.968-2.97-11.231,0.483-14.2,3.45c-2.242,2.242-2.788,5.533-1.645,8.286 c-0.341,0.263-0.688,0.53-1.043,0.805c-0.667,0.5-1.313,1.056-1.993,1.598c-0.673,0.549-1.356,1.108-2.039,1.666 c-2.703,2.266-5.315,4.619-7.245,6.419c-0.983,0.878-1.514,1.898-1.748,2.751c-0.243,0.846-0.197,1.513-0.197,1.513 c0.13,1.911,1.656,3.484,3.622,3.621c0,0,0.667,0.046,1.512-0.197c0.851-0.231,1.874-0.763,2.752-1.747 c1.796-1.929,4.151-4.543,6.417-7.242c0.559-0.686,1.117-1.367,1.667-2.041c0.543-0.681,1.1-1.325,1.596-1.992 c0.274-0.354,0.542-0.701,0.803-1.043c2.757,1.143,6.048,0.597,8.288-1.646C29.63,12.369,33.081,4.106,30.113,1.137z"></path> </g> </g></svg> 5 Ingredients | 
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M12 14V11M12 6C7.85786 6 4.5 9.35786 4.5 13.5C4.5 17.6421 7.85786 21 12 21C16.1421 21 19.5 17.6421 19.5 13.5C19.5 11.5561 18.7605 9.78494 17.5474 8.4525M12 6C14.1982 6 16.1756 6.94572 17.5474 8.4525M12 6V3M19.5 6.5L17.5474 8.4525M12 3H9M12 3H15" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg> 3m | 
+          <svg fill="#000000" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><title>ionicons-v5-q</title><path d="M425.7,118.25A240,240,0,0,0,76.32,447l.18.2c.33.35.64.71,1,1.05.74.84,1.58,1.79,2.57,2.78a41.17,41.17,0,0,0,60.36-.42,157.13,157.13,0,0,1,231.26,0,41.18,41.18,0,0,0,60.65.06l3.21-3.5.18-.2a239.93,239.93,0,0,0-10-328.76ZM240,128a16,16,0,0,1,32,0v32a16,16,0,0,1-32,0ZM128,304H96a16,16,0,0,1,0-32h32a16,16,0,0,1,0,32Zm48.8-95.2a16,16,0,0,1-22.62,0l-22.63-22.62a16,16,0,0,1,22.63-22.63l22.62,22.63A16,16,0,0,1,176.8,208.8Zm149.3,23.1-47.5,75.5a31,31,0,0,1-7,7,30.11,30.11,0,0,1-35-49l75.5-47.5a10.23,10.23,0,0,1,11.7,0A10.06,10.06,0,0,1,326.1,231.9Zm31.72-23.1a16,16,0,0,1-22.62-22.62l22.62-22.63a16,16,0,0,1,22.63,22.63ZM423.7,436.4h0ZM416,304H384a16,16,0,0,1,0-32h32a16,16,0,0,1,0,32Z"></path></g></svg> Easy 
+        </span>
+      </div>
+    </div>
+  
+     <div class="signature-serves__recipe-card">
+      <img class="signature-serves__img" src="{{ 'spiced-negroni.png' | asset_img_url:"master" }}" height='100' width='100' alt="recipe-img" />
+  
+       <h5 class="signature-serves__recipe-card__title">Spiced Negroni</h5>
+       
+         <div class="signature-serves__recipe-card__info">
+          <span>
+            <svg fill="#000000" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 31.249 31.249" xml:space="preserve"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g> <path d="M30.113,1.137c-2.968-2.97-11.231,0.483-14.2,3.45c-2.242,2.242-2.788,5.533-1.645,8.286 c-0.341,0.263-0.688,0.53-1.043,0.805c-0.667,0.5-1.313,1.056-1.993,1.598c-0.673,0.549-1.356,1.108-2.039,1.666 c-2.703,2.266-5.315,4.619-7.245,6.419c-0.983,0.878-1.514,1.898-1.748,2.751c-0.243,0.846-0.197,1.513-0.197,1.513 c0.13,1.911,1.656,3.484,3.622,3.621c0,0,0.667,0.046,1.512-0.197c0.851-0.231,1.874-0.763,2.752-1.747 c1.796-1.929,4.151-4.543,6.417-7.242c0.559-0.686,1.117-1.367,1.667-2.041c0.543-0.681,1.1-1.325,1.596-1.992 c0.274-0.354,0.542-0.701,0.803-1.043c2.757,1.143,6.048,0.597,8.288-1.646C29.63,12.369,33.081,4.106,30.113,1.137z"></path> </g> </g></svg> 5 Ingredients | 
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M12 14V11M12 6C7.85786 6 4.5 9.35786 4.5 13.5C4.5 17.6421 7.85786 21 12 21C16.1421 21 19.5 17.6421 19.5 13.5C19.5 11.5561 18.7605 9.78494 17.5474 8.4525M12 6C14.1982 6 16.1756 6.94572 17.5474 8.4525M12 6V3M19.5 6.5L17.5474 8.4525M12 3H9M12 3H15" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg> 3m | 
+            <svg fill="#000000" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><title>ionicons-v5-q</title><path d="M425.7,118.25A240,240,0,0,0,76.32,447l.18.2c.33.35.64.71,1,1.05.74.84,1.58,1.79,2.57,2.78a41.17,41.17,0,0,0,60.36-.42,157.13,157.13,0,0,1,231.26,0,41.18,41.18,0,0,0,60.65.06l3.21-3.5.18-.2a239.93,239.93,0,0,0-10-328.76ZM240,128a16,16,0,0,1,32,0v32a16,16,0,0,1-32,0ZM128,304H96a16,16,0,0,1,0-32h32a16,16,0,0,1,0,32Zm48.8-95.2a16,16,0,0,1-22.62,0l-22.63-22.62a16,16,0,0,1,22.63-22.63l22.62,22.63A16,16,0,0,1,176.8,208.8Zm149.3,23.1-47.5,75.5a31,31,0,0,1-7,7,30.11,30.11,0,0,1-35-49l75.5-47.5a10.23,10.23,0,0,1,11.7,0A10.06,10.06,0,0,1,326.1,231.9Zm31.72-23.1a16,16,0,0,1-22.62-22.62l22.62-22.63a16,16,0,0,1,22.63,22.63ZM423.7,436.4h0ZM416,304H384a16,16,0,0,1,0-32h32a16,16,0,0,1,0,32Z"></path></g></svg> Easy 
+          </span>
+        </div>
+     </div>
+  </div>
+  
+</div>
+
+<script>
+  window.addEventListener('load', function() {
+    $('.signature-serves__slider').slick({
+      dots: false,
+      arrows: false,
+      infinite: true,
+      speed: 300,
+      slidesToShow: 1,
+      centerMode: true,
+      variableWidth: true
+    })
+  })
+</script>
+
+
+{% schema %}
+  {
+    "name": "Signature Serves",
+    "settings": [
+      {
+        "type": "image_picker",
+        "id": "recipe_img",
+        "label": "Recipe Image"
+      },
+      {
+        "type": "richtext",
+        "id": "title",
+        "label": "Title"
+      },
+      {
+        "type": "html",
+        "id": "svg_title",
+        "label": "Title (SVG)"
+      },
+      {
+        "type": "image_picker",
+        "id": "img_title",
+        "label": "Title (Image)"
+      }
+    ],
+    "presets": [
+      {
+        "name": "Signature Serves"
+      }
+    ]
+  }
+{% endschema %}

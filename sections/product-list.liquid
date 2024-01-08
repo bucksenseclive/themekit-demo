@@ -1,0 +1,47 @@
+<div class="product-list">
+  <div class="product-list__slider">
+    {%- for product in section.settings.custom_collection.products -%}
+      {% render 'product-card' %}
+    {%- endfor -%}
+
+    {% for product in collections[section.settings.custom_collection].products %}
+      {{ custom_products }},{{ product.handle }}
+    {% endfor %}
+  </div>
+  
+  <div class="product-list__button">
+    <button>Opihr's Range</button>
+  </div>  
+</div>
+
+<script>
+  window.addEventListener('load', function() {
+    $('.product-list__slider').slick({
+        dots: false,
+        arrows: false,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 1,
+        centerMode: true,
+        variableWidth: true
+    })
+  })
+</script>
+
+{% schema %}
+  {
+    "name": "Product List",
+    "settings": [
+      {
+        "type": "collection",
+        "id": "custom_collection",
+        "label": "collection"
+      }
+    ],
+    "presets": [
+      {
+        "name": "Product List"
+      }
+    ]
+  }
+{% endschema %}
