@@ -1,6 +1,7 @@
 {
   "sections": {
     "image_banner": {
+      "disabled": true,
       "type": "image-banner",
       "blocks": {
         "heading": {
